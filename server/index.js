@@ -7,7 +7,7 @@ const useroute=require("./routes/user");
 //importing auth function from config to register
 const auth=require("./configs/Oauth");
 //middle ware function which can be used to verify user login status before allowing to acces the given route
-const {cdrequiresAuth}=require("express-openid-connect");
+const {requiresAuth}=require("express-openid-connect");
 //cross origin resource sharing it is a protocal to help applicationt o accept api request from certain domain 
 const cors = require("cors")
 app.use(cors())
