@@ -1,0 +1,66 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "pages/index";
+exports.ids = ["pages/index"];
+exports.modules = {
+
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Login)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-hook-form */ \"react-hook-form\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ \"axios\");\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_hook_form__WEBPACK_IMPORTED_MODULE_1__]);\nreact_hook_form__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\nfunction Login() {\n    const { register , handleSubmit , formState: { error  }  } = (0,react_hook_form__WEBPACK_IMPORTED_MODULE_1__.useForm)();\n    function formdata1(formdata) {\n        console.log(formdata);\n        //first goes the api end point url and then the data then geos the credential\n        axios__WEBPACK_IMPORTED_MODULE_2___default().get(\"http://localhost:2900/login\").then((result)=>{\n            console.log(result.data);\n        }).catch(()=>{\n            console.log(\"error\");\n        });\n    }\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"form\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Authentication Form\"\n            }, void 0, false, {\n                fileName: \"E:\\\\My project\\\\Passportjs_Firebase auth\\\\passportjs\\\\pages\\\\index.js\",\n                lineNumber: 34,\n                columnNumber: 1\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"form\", {\n                className: \"form\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                        type: \"text\",\n                        className: \"input\",\n                        placeholder: \"email\",\n                        ...register(\"email\", {\n                            required: true\n                        })\n                    }, void 0, false, {\n                        fileName: \"E:\\\\My project\\\\Passportjs_Firebase auth\\\\passportjs\\\\pages\\\\index.js\",\n                        lineNumber: 38,\n                        columnNumber: 1\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                        type: \"text\",\n                        className: \"input\",\n                        placeholder: \"password\",\n                        ...register(\"password\", {\n                            required: true\n                        })\n                    }, void 0, false, {\n                        fileName: \"E:\\\\My project\\\\Passportjs_Firebase auth\\\\passportjs\\\\pages\\\\index.js\",\n                        lineNumber: 39,\n                        columnNumber: 1\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"input\", {\n                        type: \"submit\",\n                        value: \"login\",\n                        onClick: handleSubmit(formdata1)\n                    }, void 0, false, {\n                        fileName: \"E:\\\\My project\\\\Passportjs_Firebase auth\\\\passportjs\\\\pages\\\\index.js\",\n                        lineNumber: 40,\n                        columnNumber: 1\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"E:\\\\My project\\\\Passportjs_Firebase auth\\\\passportjs\\\\pages\\\\index.js\",\n                lineNumber: 36,\n                columnNumber: 1\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                className: \"gogo\",\n                href: \"http://localhost:2900/login\",\n                onClick: ()=>{\n                    console.log(\"authenticated hudai\");\n                },\n                children: \" Sign in with gogole\"\n            }, void 0, false, {\n                fileName: \"E:\\\\My project\\\\Passportjs_Firebase auth\\\\passportjs\\\\pages\\\\index.js\",\n                lineNumber: 45,\n                columnNumber: 1\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                className: \"gogo\",\n                href: \"http://localhost:2900/login\",\n                onClick: ()=>{\n                    console.log(\"authenticated hudai\");\n                },\n                children: \" Sign in with facebook\"\n            }, void 0, false, {\n                fileName: \"E:\\\\My project\\\\Passportjs_Firebase auth\\\\passportjs\\\\pages\\\\index.js\",\n                lineNumber: 50,\n                columnNumber: 1\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                className: \"gogo\",\n                href: \"http://localhost:2900/login\",\n                onClick: ()=>{\n                    console.log(\"authenticated hudai\");\n                },\n                children: \" Sign in with github\"\n            }, void 0, false, {\n                fileName: \"E:\\\\My project\\\\Passportjs_Firebase auth\\\\passportjs\\\\pages\\\\index.js\",\n                lineNumber: 55,\n                columnNumber: 1\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"E:\\\\My project\\\\Passportjs_Firebase auth\\\\passportjs\\\\pages\\\\index.js\",\n        lineNumber: 32,\n        columnNumber: 5\n    }, this);\n};\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7QUFDQTtBQUF3QztBQUNmO0FBVVYsU0FBU0UsS0FBSyxHQUFFO0lBRTdCLE1BQU0sRUFBQ0MsUUFBUSxHQUFDQyxZQUFZLEdBQUNDLFNBQVMsRUFBQyxFQUFDQyxLQUFLLEdBQUMsR0FBQyxHQUFDTix3REFBTyxFQUFFO0lBRXpELFNBQVNPLFNBQVEsQ0FBQ0EsUUFBUSxFQUFDO1FBQ3pCQyxPQUFPLENBQUNDLEdBQUcsQ0FBQ0YsUUFBUSxDQUFDO1FBQ3JCLDZFQUE2RTtRQUM3RU4sZ0RBQVMsQ0FBQyw2QkFBNkIsQ0FBQyxDQUFDVSxJQUFJLENBQUMsQ0FBQ0MsTUFBTSxHQUFHO1lBQ3hESixPQUFPLENBQUNDLEdBQUcsQ0FBQ0csTUFBTSxDQUFDQyxJQUFJLENBQUM7U0FFdkIsQ0FBQyxDQUFDQyxLQUFLLENBQUMsSUFBSTtZQUNYTixPQUFPLENBQUNDLEdBQUcsQ0FBQyxPQUFPLENBQUM7U0FDckIsQ0FBQztLQUlIO0lBQ0QscUJBRUUsOERBQUNNLEtBQUc7UUFBQ0MsU0FBUyxFQUFDLE1BQU07OzBCQUV6Qiw4REFBQ0MsSUFBRTswQkFBQyxxQkFBbUI7Ozs7O29CQUFLOzBCQUU1Qiw4REFBQ0MsTUFBSTtnQkFBQ0YsU0FBUyxFQUFDLE1BQU07O2tDQUV0Qiw4REFBQ0csT0FBSzt3QkFBQ0MsSUFBSSxFQUFDLE1BQU07d0JBQUNKLFNBQVMsRUFBQyxPQUFPO3dCQUFDSyxXQUFXLEVBQUMsT0FBTzt3QkFBRyxHQUFHbEIsUUFBUSxDQUFDLE9BQU8sRUFBQzs0QkFBQ21CLFFBQVEsRUFBQyxJQUFJO3lCQUFDLENBQUM7Ozs7OzRCQUFJO2tDQUNuRyw4REFBQ0gsT0FBSzt3QkFBQ0MsSUFBSSxFQUFDLE1BQU07d0JBQUNKLFNBQVMsRUFBQyxPQUFPO3dCQUFDSyxXQUFXLEVBQUMsVUFBVTt3QkFBRyxHQUFHbEIsUUFBUSxDQUFDLFVBQVUsRUFBQzs0QkFBQ21CLFFBQVEsRUFBQyxJQUFJO3lCQUFDLENBQUM7Ozs7OzRCQUFJO2tDQUN6Ryw4REFBQ0gsT0FBSzt3QkFBQ0MsSUFBSSxFQUFDLFFBQVE7d0JBQUNHLEtBQUssRUFBQyxPQUFPO3dCQUFDQyxPQUFPLEVBQUVwQixZQUFZLENBQUNHLFNBQVEsQ0FBQzs7Ozs7NEJBQUk7Ozs7OztvQkFJL0Q7MEJBQ1AsOERBQUNrQixHQUFDO2dCQUFDVCxTQUFTLEVBQUMsTUFBTTtnQkFBQ1UsSUFBSSxFQUFDLDZCQUE2QjtnQkFBQ0YsT0FBTyxFQUFFLElBQUk7b0JBQ2xFaEIsT0FBTyxDQUFDQyxHQUFHLENBQUMscUJBQXFCLENBQUM7aUJBRW5DOzBCQUFFLHNCQUFvQjs7Ozs7b0JBQUk7MEJBRTNCLDhEQUFDZ0IsR0FBQztnQkFBQ1QsU0FBUyxFQUFDLE1BQU07Z0JBQUNVLElBQUksRUFBQyw2QkFBNkI7Z0JBQUNGLE9BQU8sRUFBRSxJQUFJO29CQUNsRWhCLE9BQU8sQ0FBQ0MsR0FBRyxDQUFDLHFCQUFxQixDQUFDO2lCQUVuQzswQkFBRSx3QkFBc0I7Ozs7O29CQUFJOzBCQUU3Qiw4REFBQ2dCLEdBQUM7Z0JBQUNULFNBQVMsRUFBQyxNQUFNO2dCQUFDVSxJQUFJLEVBQUMsNkJBQTZCO2dCQUFDRixPQUFPLEVBQUUsSUFBSTtvQkFDbEVoQixPQUFPLENBQUNDLEdBQUcsQ0FBQyxxQkFBcUIsQ0FBQztpQkFFbkM7MEJBQUUsc0JBQW9COzs7OztvQkFBSTs7Ozs7O1lBU2pCLENBR0w7Q0FDSiIsInNvdXJjZXMiOlsid2VicGFjazovL3Bhc3Nwb3J0anMvLi9wYWdlcy9pbmRleC5qcz9iZWU3Il0sInNvdXJjZXNDb250ZW50IjpbIlxuaW1wb3J0IHt1c2VGb3JtfSBmcm9tICdyZWFjdC1ob29rLWZvcm0nO1xuaW1wb3J0IGF4aW9zIGZyb20gXCJheGlvc1wiXG5cblxuXG5cblxuXG5cblxuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBMb2dpbigpe1xuXG4gIGNvbnN0IHtyZWdpc3RlcixoYW5kbGVTdWJtaXQsZm9ybVN0YXRlOntlcnJvcn19PXVzZUZvcm0oKTtcblxuICBmdW5jdGlvbiBmb3JtZGF0YShmb3JtZGF0YSl7XG4gICAgY29uc29sZS5sb2coZm9ybWRhdGEpXG4gICAgLy9maXJzdCBnb2VzIHRoZSBhcGkgZW5kIHBvaW50IHVybCBhbmQgdGhlbiB0aGUgZGF0YSB0aGVuIGdlb3MgdGhlIGNyZWRlbnRpYWxcbiAgICBheGlvcy5nZXQoXCJodHRwOi8vbG9jYWxob3N0OjI5MDAvbG9naW5cIikudGhlbigocmVzdWx0KT0+e1xuICAgIGNvbnNvbGUubG9nKHJlc3VsdC5kYXRhKVxuXG4gICAgfSkuY2F0Y2goKCk9PntcbiAgICAgIGNvbnNvbGUubG9nKFwiZXJyb3JcIilcbiAgICB9KVxuICAgIFxuICAgIFxuXG4gIH1cbiAgcmV0dXJuKFxuICAgIFxuICAgIDxkaXYgY2xhc3NOYW1lPVwiZm9ybVwiPlxuXG48aDE+QXV0aGVudGljYXRpb24gRm9ybTwvaDE+XG5cbjxmb3JtIGNsYXNzTmFtZT1cImZvcm1cIj5cblxuPGlucHV0IHR5cGU9XCJ0ZXh0XCIgY2xhc3NOYW1lPVwiaW5wdXRcIiBwbGFjZWhvbGRlcj0nZW1haWwnICB7Li4ucmVnaXN0ZXIoXCJlbWFpbFwiLHtyZXF1aXJlZDp0cnVlfSl9IC8+IFxuPGlucHV0IHR5cGU9XCJ0ZXh0XCIgY2xhc3NOYW1lPVwiaW5wdXRcIiBwbGFjZWhvbGRlcj0ncGFzc3dvcmQnICB7Li4ucmVnaXN0ZXIoXCJwYXNzd29yZFwiLHtyZXF1aXJlZDp0cnVlfSl9IC8+IFxuPGlucHV0IHR5cGU9XCJzdWJtaXRcIiB2YWx1ZT1cImxvZ2luXCIgb25DbGljaz17aGFuZGxlU3VibWl0KGZvcm1kYXRhKX0gLz5cblxuXG5cbjwvZm9ybT5cbjxhIGNsYXNzTmFtZT0nZ29nbycgaHJlZj0naHR0cDovL2xvY2FsaG9zdDoyOTAwL2xvZ2luJyBvbkNsaWNrPXsoKT0+e1xuICBjb25zb2xlLmxvZyhcImF1dGhlbnRpY2F0ZWQgaHVkYWlcIilcblxufX0+IFNpZ24gaW4gd2l0aCBnb2dvbGU8L2E+XG5cbjxhIGNsYXNzTmFtZT0nZ29nbycgaHJlZj0naHR0cDovL2xvY2FsaG9zdDoyOTAwL2xvZ2luJyBvbkNsaWNrPXsoKT0+e1xuICBjb25zb2xlLmxvZyhcImF1dGhlbnRpY2F0ZWQgaHVkYWlcIilcblxufX0+IFNpZ24gaW4gd2l0aCBmYWNlYm9vazwvYT5cblxuPGEgY2xhc3NOYW1lPSdnb2dvJyBocmVmPSdodHRwOi8vbG9jYWxob3N0OjI5MDAvbG9naW4nIG9uQ2xpY2s9eygpPT57XG4gIGNvbnNvbGUubG9nKFwiYXV0aGVudGljYXRlZCBodWRhaVwiKVxuXG59fT4gU2lnbiBpbiB3aXRoIGdpdGh1YjwvYT5cblxuXG5cblxuXG5cblxuXG4gICAgPC9kaXY+XG4gICAgXG4gICAgXG4gICAgKVxufVxuXG5cbiJdLCJuYW1lcyI6WyJ1c2VGb3JtIiwiYXhpb3MiLCJMb2dpbiIsInJlZ2lzdGVyIiwiaGFuZGxlU3VibWl0IiwiZm9ybVN0YXRlIiwiZXJyb3IiLCJmb3JtZGF0YSIsImNvbnNvbGUiLCJsb2ciLCJnZXQiLCJ0aGVuIiwicmVzdWx0IiwiZGF0YSIsImNhdGNoIiwiZGl2IiwiY2xhc3NOYW1lIiwiaDEiLCJmb3JtIiwiaW5wdXQiLCJ0eXBlIiwicGxhY2Vob2xkZXIiLCJyZXF1aXJlZCIsInZhbHVlIiwib25DbGljayIsImEiLCJocmVmIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/index.js\n");
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/***/ ((module) => {
+
+module.exports = require("axios");
+
+/***/ }),
+
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
+/***/ ((module) => {
+
+module.exports = require("react/jsx-dev-runtime");
+
+/***/ }),
+
+/***/ "react-hook-form":
+/*!**********************************!*\
+  !*** external "react-hook-form" ***!
+  \**********************************/
+/***/ ((module) => {
+
+module.exports = import("react-hook-form");;
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = (__webpack_exec__("./pages/index.js"));
+module.exports = __webpack_exports__;
+
+})();
